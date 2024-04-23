@@ -1,0 +1,484 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    /* font-family: 'Roboto',sans-serif; */
+    font-family: 'lato',sans-serif;
+}
+#navbar
+{
+    background: #f9f9f9; 
+    
+}
+#logo
+{
+    font-size: 36px;
+    font-weight: 550;
+    color: black;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 5px;
+}
+#logo span
+{
+    color: #ffa500;
+}
+.navbar-toggler span
+{
+    color: #ffa500;
+}
+.navbar-nav
+{
+    margin-left: 20px;
+}
+.nav-item .nav-link
+{
+    font-size: 16px;
+    font-weight: 550;
+    color: black;
+    letter-spacing: 1px;
+    border-radius: 1px;
+    transition: 2s ease;
+}
+.nav-item .nav-link:hover{
+    background: #ffa500;
+    color: white;
+}
+#navbar form button {
+    background: orange;
+    color: white;
+    border: none;
+}
+/* Home section */
+.home
+{
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url(image-1.webp);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    animation: slider 20s infinite linear;
+    box-shadow: 1px,2px,10px 10px white;
+}
+@keyframes slider
+    {
+        0%{background-image: url(image-1.webp); 
+background-size: 100% 100%;}
+        5%{background-image: url(https://media.istockphoto.com/id/1145422105/photo/eiffel-tower-aerial-view-paris.jpg?s=612x612&w=0&k=20&c=sFn6FwTJR0TpX3rP_W4VHrbkTB__6l5kr-lkkqdYrtE=);
+background-size: 100% 100%; }
+        10%{background-image: url(https://imgs.search.brave.com/RXcCzD3d3BV80u8Moxhfx-VO6ZYH_FlR5xad7b8bwlg/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/cGxhbmV0d2FyZS5j/b20vd3BpbWFnZXMv/MjAyMi8wMy9zcGFp/bi1pbi1waWN0dXJl/cy1iZWF1dGlmdWwt/cGxhY2VzLXRvLXBo/b3RvZ3JhcGgtcGFs/YWNpby1yZWFsLW1h/ZHJpZC5qcGc);
+background-size: 100% 100%; }
+        20%{background-image: url(https://imgs.search.brave.com/gcwdNgn5o7maYvGSADFqfXc8hBWMwCHilz6hbGGOq70/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/NzY2MDY5NzAwMDkt/N2RkYzQyMjljZWQ3/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TVRoOGZI/VnpZWHhsYm53d2ZI/d3dmSHg4TUE9PQ);
+background-size: 100% 100%; }
+        30%{background-image: url(https://imgs.search.brave.com/NBHmTPBd0A9v0ikML-URQaI1xyj1Rn-GAcukMNyQ-fE/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4u/d2FsbHBhcGVyc2Fm/YXJpLmNvbS81My8z/Mi9wTWw5TlEuanBn);
+background-size: 100% 100%; }
+        40%{background-image: url(https://imgs.search.brave.com/2g4vsXDnNCZxJN8n08wqsj_hl61W0TBY7rS7U9OCK7Y/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2FmL2Yw/Lzg1L2FmZjA4NWMx/ZWQ2NWU4YTY2MjM0/MWQ2ZDBkZDQ2ZDg0/LmpwZw);
+background-size: 100% 100%; }
+        50%{background-image: url(https://imgs.search.brave.com/jUu4Sur3OZda8RKcW3mXi1FUA9IRJDqzWpaq7Oys73g/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9ibG9n/LmdyYWFuYS5jb20v/d3AtY29udGVudC91/cGxvYWRzLzIwMjAv/MTAvbm9vci1tYWhh/bC1iYWhhd2FscHVy/LXBha2lzdGFuLXBp/Y3R1cmUtaWQ5NTY4/NTk4NjQuanBn);
+background-size: 100% 100%; }
+        60%{background-image: url(https://imgs.search.brave.com/BH1BIXZG5tYg_12MrIlci72aKTZXJpwwUq2sFPxYCL8/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4u/dGhlY3Jhenl0b3Vy/aXN0LmNvbS93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyMy8wMi9j/Y2ltYWdlLXNodXR0/ZXJzdG9ja182OTYw/NDI3OTMuanBn);
+background-size: 100% 100%; }
+        70%{background-image: url(https://imgs.search.brave.com/uRihkUaRexjQzX6__CunyL_XB-mqYQ5HAGnE7pV49EY/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/dHJhdmVsYW5kZGVz/dGluYXRpb25zLmNv/bS93cC1jb250ZW50/L3VwbG9hZHMvMjAx/OS8wOC9UdXJrZXkt/YmVhdXRpZnVsLXBs/YWNlcy10by1zZWUt/YW5kLXZpc2l0Lmpw/Zw);
+background-size: 100% 100%; }
+        80%{background-image: url(https://imgs.search.brave.com/6AKAAW1YICKlS7o1p7BzcLf4Na019y2hmRXlJZ_2qw4/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/dG91cm9waWEuY29t/L2dmeC9kL3ZhY2F0/aW9uLXNwb3RzLWlu/LW1leGljby9jYW5j/dW4uanBn);
+background-size: 100% 100%; }
+        90%{background-image: url(https://imgs.search.brave.com/TvpqVUpevdX4RH3Of_Skj7DVjsGmX40sCENmITTO7p0/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90aGVw/bGFuZXRkLmNvbS9p/bWFnZXMvUGxhY2Ut/dG8tVmlzaXQtaW4t/QmVybGluLVJlaWNo/c3RhZy5qcGc);
+background-size: 100% 100%; }
+        100%{background-image: url(https://imgs.search.brave.com/Z-ivWQiiXJdP27gNE39u3w3b1KYO-DCYJw5YfiHsBc8/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9kMnJk/aHhmb2Y0cW1iYi5j/bG91ZGZyb250Lm5l/dC93cC1jb250ZW50/L3VwbG9hZHMvMjAy/MzAxMjIxMjE1MDIv/aXN0b2NrcGhvdG8t/NDc3MjE0MTk1LTYx/Mng2MTItMS5qcGc);
+background-size: 100% 100%; }
+      
+    }
+.home .content
+{
+    text-align: center;
+    padding-top: 200px;
+}
+.home .content h5
+{
+    color: white;
+    font-size: 38px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+}
+.home .content h1
+{ 
+    color: white;
+    font-size: 70px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 5px;
+}
+.Changescontent::after
+{
+    content: '';
+    color: #ffa500;
+    text-shadow: 0px 1px 1px black;
+    animation: changetext 20s infinite linear;
+}
+@keyframes changetext{
+    0%{content:"Welcome To World Tour";}
+    5%{content:"France";}
+    10%{content:"Spain";}
+    20%{content:"United Satates";}
+    30%{content:"China";}
+    40%{content:"India";}
+    50%{content:"Pakistan";}
+    60%{content:"Italy";}
+    70%{content:"Turkey";}
+    80%{content:"Mexico";}
+    90%{content:"Germany";}
+    100%{content:"United kingdom";}
+  
+}
+.home .content p{
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+.home .content a{
+    padding: 10px;
+    background-color: white;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 550;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.home .content a:hover
+{
+    color: white;
+    background-color: #ffa500;
+}
+@media (max-width:850px)
+{
+    .home{
+        background-position: 50%;
+    }
+}
+@media (max-width:450px)
+{
+    .home .content h5{
+       font-size: 25px;
+    }
+    .home .content h1
+    {
+        font-size: 38px;
+    }
+    .home .content p
+    {
+        font-size: 13px;
+    }
+}
+.book
+{
+    background: #f9f9f9;
+    padding: 50px;
+}
+.main-text h1{
+    text-align: center;
+    text-shadow: 0px 1px 1px black;
+    font-weight: 600;
+}
+.main-text h1 span
+{
+    color: #ffa500;
+}
+.book .card
+{
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+.book .row{
+    margin-top: 30px;
+}
+.book form input
+{
+    padding: 10px;
+    columns: black;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+    
+}
+.book form textarea
+{
+    border: none;
+    /* outline: none; */
+    border-radius: 10px;
+    resize: none;
+    box-shadow: 0px 5px 5px -6px black;
+    height: 220px;
+}
+.book .submit
+{
+    width: 160px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #ffa500;
+    color: white;
+    margin-top: 10px;
+    transition: .5s;
+}
+.book .submit:hover
+{
+    width: 170px;
+}
+@media (max_width:765px){
+    .book{
+        padding: 0;
+    }
+    .main-text h1{
+        padding: 20px;
+    }
+}
+
+
+/* packages */
+.main-txt h1
+{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+}
+.main-txt h1 span{
+    color: #ffa500;
+}
+.packages .card{
+    border-radius: 5px;
+    border: none;
+    box-sizing: rgba(0,0,0,0.1) 0px 4px 12px;
+}
+.packages .card img
+{
+border-radius: 5px;
+}
+.packages .card .card-body
+{
+    background: transparent;
+}
+
+.packages .card .card-body h3
+{
+    font-size: 25px;
+    font-weight: 600;
+}
+.packages .card .card-body p{
+    font-size: 15px;
+}
+.checked
+{
+    color: #ffa500;
+}
+.star i
+{
+    font-size: 15px;
+}
+.packages .card .card-body h6
+{
+    font-size: 20px;
+}
+.packages .card .card-body a{
+    padding: 10px;
+    text-decoration: none;
+    background: #ffa500;
+    color: white;
+    border-radius: 5px;
+}
+
+/* services */
+.services
+{
+    background: #f9f9f9;
+    margin-top: 50px;
+}
+.services .card{
+    box-shadow:rgba(0,0,0,0.1)0px 4px 12px;
+    border: none;
+    cursor: pointer;
+}
+.services .card i{
+    font-size: 80px;
+    text-align: center;
+    color: #ffa500;
+    margin-top: 20px;
+}
+.services .card .card-body h3{
+    font-weight: 600;
+}
+.services .card .card-body
+{
+    text-align: center;
+}
+/* gallary */
+.gallary
+{
+    margin-top:50px ;
+}
+.gallary .card{
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.1)0px 4px 12px;
+    cursor: pointer;
+}
+.gallary .card img
+{
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.gallary .card img:hover{
+    transform: scale(1.1);
+}
+.about
+{
+    padding: 50px;
+    margin-top: 50px;
+    background: #f9f9f9;
+
+}
+.about .card
+{
+    border-radius: 10px;
+
+}
+.about .card img{
+    border-radius: 10px;
+}
+.about h2{
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.about p
+{
+    font-weight: 500;
+}
+#about-btn
+{
+    width: 150px;
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+    background: #ffa500;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 550;
+    transition: 0.5s ease;
+    cursor: pointer;
+
+}
+#about-btn:hover
+{
+    width: 170px;
+}
+@media(max-width:765px)
+{
+    .about
+    {
+        padding: 0;
+    }
+}
+.contact
+{
+    background: #f9f9f9;
+    padding: 50px;
+}
+.main-text h1{
+    text-align: center;
+    text-shadow: 0px 1px 1px black;
+    font-weight: 600;
+}
+.main-text h1 span
+{
+    color: #ffa500;
+}
+.contact .card
+{
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+.contact .row{
+    margin-top: 30px;
+}
+
+.contact form input
+{
+    padding: 10px;
+    columns: black;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+    margin-bottom: 16px;
+}
+.contact .submit
+{
+    width: 160px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #ffa500;
+    color: white;
+    margin-top: 10px;
+    transition: .5s;
+}
+.contact .submit:hover
+{
+    width: 170px;
+}
+@media (max_width:550px){
+    .contact{
+        padding: 0;
+    }
+    .main-text h1{
+        padding: 20px;
+    }
+}
+
+/* footer */
+#footer
+{
+    width: 100%;
+    margin-top: 150px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+#footer h1
+{
+    font-weight: 600;
+    padding-top: 30px;
+    text-shadow: 0px 0px 1px black;
+}
+#footer h1 span 
+{
+    color: #ffa500;
+}
+.social-link
+{
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    background: #f9f9f9;
+    color: black;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.social-link i 
+{
+    padding: 5px;
+    
+}
+.social-link i:hover
+{
+    background: #ffa500;
+    font-size: 25px;
+}
